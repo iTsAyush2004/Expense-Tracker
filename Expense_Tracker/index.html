@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1 class="center"> EXPENSE TRACKER</h1>
+            <h3 class="end">By- Ayush</h3>
+            <br>
+            <hr class="line" style="border: 2px solid black; margin-left: 30px;">
+        </div>
+        <div class="middle">
+          <div class="middleTop">
+            <div class="total">
+                <h2 class="totalBal">Total Balance:</h2>
+                <div class="totalValue"></div>
+            </div>
+            <div class="info">
+                <div class="left">
+                    <h3 class="income">Income:</h3>
+                    <div class="leftV"></div>
+                </div>
+                <hr class="line" style="border: 2px solid black; margin-left: 80px;">
+                <div class="right">
+                    <h3 class="expense">Expense:</h3>
+                    <div class="rightV"></div>
+                </div>
+            </div>
+            <div class="middleBottom">
+                <h2 class="history">History:</h2>
+                <hr class="line" style="border: 2px solid black; margin-left: 30px;">
+                <div class="items" style="overflow-y: scroll;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+            <div class="bottomTop">
+                <h2 style="margin-top: 0px;">Add New Transaction:</h2>
+                <hr class="line" style="border: 2px solid black; margin-left: 30px;">
+            </div>
+            <div class="bottomFooter">
+                <div class="textBox">
+                    <h3 class="lower">Text:</h3>
+                    <input type="text" class="t1" placeholder="Enter Text...">
+                </div>
+                <div class="amountBox">
+                    <h3 class="lower">Amount:</h3>
+                    <input type="number" class="t2" placeholder="Enter Amount...">
+                </div>
+                <button class="add" type="submit">Add</button>
+                <button class="download"><a href="#" download="">download</a></button>
+                <button class="clear" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="first.js"></script>
+</body>
+</html>
